@@ -7,7 +7,7 @@ const CardIndividual = ({event}) => {
     <div key={event.eventId} className="border border-customColor transition-all duration-700 shadow-2xl  hover:shadow-[#8800ff]  hover:shadow-2xl rounded-lg w-80 m-4 bg-purple-100 bg-opacity-75 p-2">
       <div className="p-1">
         <img
-          className="h-40 w-full object-cover rounded-lg"
+          className="h-40 w-full object-cover rounded-md"
           src={event.image}
           alt=""
         />
