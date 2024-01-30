@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import MainPage from './components/MainPage';
+import {Routes,Route} from 'react-router-dom'
+import RequestEvent from './components/RequestEvent'
 
 
 function App() {
 
   return (
     <div className=' bg-gradient-to-r from-[#eaf3fd] via-[#fdfdfd] to-[#ffebdc] lg:w-full w-fit'>
-        <MainPage />
+        <Routes>
+          <Route path='/' element={<MainPage/>}></Route>
+          <Route path='/requestEvent' element={<RequestEvent/>} ></Route>
+        </Routes>
     </div>
   )
 }

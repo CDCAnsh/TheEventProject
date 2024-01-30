@@ -4,7 +4,7 @@ import React from 'react';
 
 const CardIndividual = ({event}) => {
   return (
-    <div key={event.eventId} className="border border-customColor transition-all duration-700 shadow-2xl  hover:shadow-[#8800ff]  hover:shadow-2xl rounded-lg w-80 m-4 bg-purple-100 bg-opacity-75 p-2">
+    <div key={event.eventId} className="border border-customColor transition-all duration-700 shadow-2xl  hover:shadow-[#8800ffae]  hover:shadow-2xl rounded-lg w-80 m-4 bg-purple-100 bg-opacity-75 p-2">
       <div className="p-1">
         <img
           className="h-40 w-full object-cover rounded-lg"
@@ -28,7 +28,7 @@ const CardIndividual = ({event}) => {
         <div className="flex justify-between items-center mt-2">
           <div>{event.category}</div>
           <div>
-            <button className="border-4 border-transparent bg-button hover:bg-customColor hover:text-white rounded-md transition-all duration-500 text-black px-4 py-2">
+            <button className="border-4 border-transparent bg-[#ac4dff48] hover:bg-customColor hover:text-white rounded-md transition-all duration-500 text-black px-4 py-2">
               {event.Button}
             </button>
           </div>

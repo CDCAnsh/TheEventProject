@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import SideNav from './SideNav';
 import CustomContainer from './CustomContainer';
 import Card from './Card';
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return(
@@ -18,12 +19,14 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex gap-2">
-              <button href="#" className="  hover:text-white bg-[#ac4dff48] hover:bg-[#ac4dff] transition-all duration-500 rounded-xl border-2 border-transparent  p-2 w-32">
+              <button href="#" className="  hover:text-white bg-[#ac4dff48] hover:bg-[#ac4dff] transition-all duration-700 rounded-xl border-2 border-transparent  p-2 w-32">
                 Home
               </button>
-              <button href="#" className=" hover:text-white border-transparent  bg-[#ac4dff48] hover:bg-[#ac4dff] transition-all duration-500 rounded-xl border-2  p-2 w-32  ">
+              <Link to='/requestEvent'>
+              <button href="#" className=" hover:text-white border-transparent  bg-[#ac4dff48] hover:bg-[#ac4dff] transition-all duration-700 rounded-xl border-2  p-2 w-32  ">
                 Request Event
               </button>
+              </Link>
               <button className="bg-[#ac4dff] hover:bg-[#ac4dff48] transition-all duration-500 hover:text-black text-white border-transparent font-normal text-sm md:text-base leading-normal tracking-wider flex-shrink-0 fill-current text-black-500 mix-blend-darken rounded-xl rgba(136, 54, 255, 0.59); md:p-1 md:px-2 p-0.25 px-0.5">
                 Login/SignUp
               </button>
