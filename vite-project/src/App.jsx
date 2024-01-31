@@ -7,7 +7,7 @@ import RequestEvent from './components/RequestEvent'
 function App() {
 
   return (
-    <div className=' bg-gradient-to-r from-[#eaf3fd] via-[#fdfdfd] to-[#ffebdc] lg:w-full w-fit'>
+    <div className=' bg-[#fefeff]'>
         <Routes>
           <Route path='/' element={<MainPage/>}></Route>
           <Route path='/requestEvent' element={<RequestEvent/>} ></Route>

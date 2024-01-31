@@ -13,7 +13,7 @@ const MainPage = () => {
   };
 
   return (
-    <div className='flex bg-gradient-to-r from-[#eaf3fd] via-[#fdfdfd] to-[#ffebdc]'>
+    <div className='flex '>
       <div className='z-20 fixed'>
         <SideNav onCategoryChange={handleCategoryChange}/>
       </div>      
