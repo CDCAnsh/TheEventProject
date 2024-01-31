@@ -46,7 +46,7 @@ const SideNav = ({onCategoryChange}) => {
             </div>
             <div className={showSideNav ? 'hover:bg-white transition-all duration-300 hover:text-customColor cursor-pointer pl-5 h-10 flex items-center' : 'h-10 w-12 flex justify-center items-center hover:bg-side transition-all duration-300 hover:text-white'}  onClick={()=>handleCategoryClick("Business")}>
                 <div className={styles.icon}>
-                    <img className='ml-3 h-6 grayscale active:grayscale-0 focus:grayscale-0'  tabIndex="0" src='../../public/bcolor.png' alt="" />
+                    <img className='ml-3 h-6 grayscale active:grayscale-0 focus:grayscale-0'  tabIndex="0" src='../../public/briefcase.png' alt="" />
                 </div>
                 <div className='pl-3'>
                     {showSideNav ? 'Business' : null}
