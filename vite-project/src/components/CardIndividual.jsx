@@ -28,7 +28,7 @@ const CardIndividual = ({event}) => {
         <div className="flex justify-between items-center mt-2">
           <div>{event.category}</div>
           <div>
-            <button className="border-4 border-transparent bg-[#941aff] hover:bg-[#a033ff]  rounded-md transition-all duration-500 text-white px-4 py-2">
+            <button className="border-3 border-transparent bg-[#00a4e5d6] hover:bg-[#f39f2ad2]  rounded-md transition-all duration-500 text-white px-4 py-2">
               {event.Button}
             </button>
           </div>
