@@ -1,0 +1,80 @@
+[
+  {
+    "eventId": "#1",
+    "title": "Opensource Event",
+    "mentorName1": "Sriram",
+    "mentorName2": "Nandan",
+    "category": "Technology",
+    "Date": "16",
+    "Month": "Jan",
+    "Years": "2024",
+    "Time": "21:00 - 22:30",
+    "location": {
+      "country": "India",
+      "State": "Karnataka",
+      "city": "Bangalore"
+    },
+    "eventType": "Live",
+    "Highlight": "True",
+    "Button": "Register Now",
+    "upcoming": "true",
+    "pre-recorded": "false",
+    "imageUrl": "/src/assets/Curious_Ecosystem.jpg",
+    "image1Url": "/src/assets/robot-face 1.png",
+    "image2Url": "/src/assets/Robat2.gif",
+    "image3Url": "/src/assets/Curious.png",
+    "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada tincidunt libero, ac cursus risus elementum eu. Duis vitae interdum ante, id malesuada massa. Nunc viverra, ipsum a varius pharetra, sem urna dignissim ligula, sit amet aliquet magna elit nec nisi. Suspendisse vitae erat laoreet, tempus lorem a, vehicula enim. Vestibulum ipsum massa, congue sit amet dui ut, consequat mattis sapien. Nulla aliquet efficitur urna, at dapibus magna vehicula vitae. Mauris aliquam odio sed lectus imperdiet, non varius massa bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin a augue at massa vulputate congue consequat ut justo. Nulla eget nisl non diam suscipit pretium. Nullam non tincidunt mi. Mauris gravida mauris sit amet purus imperdiet, ac accumsan sapien convallis. Pellentesque et vehicula ligula. Etiam molestie purus quis pharetra auctor. Donec lobortis cursus egestas. Nullam at fringilla quam. Sed a ex id ipsum eleifend fermentum eu in dolor. Etiam nec bibendum lectus. Duis faucibus nunc velit, ac elementum enim tempus ut. Donec imperdiet congue neque, ac ultricies nunc imperdiet id. Aliquam erat volutpat. Integer nec mattis quam, quis mollis turpis. In hac habitasse platea dictumst. Nullam egestas tortor ac massa vulputate feugiat. Fusce condimentum velit."
+  },
+  {
+    "eventId": "#2",
+    "title": "DSA Event",
+    "mentorName1": "Aditya",
+    "mentorName2": "Ankit",
+    "category": "Technology",
+    "Date": "22",
+    "Month": "May",
+    "Years": "2024",
+    "Time": "21:00 - 22:30",
+    "location": {
+      "country": "India",
+      "State": "Maharashtra",
+      "city": "Pune"
+    },
+    "eventType": "Pre recorded",
+    "Highlight": "False",
+    "Button": "Watch Now",
+    "upcoming": "true",
+    "pre-recorded": "false",
+    "imageUrl": "/src/assets/Event1.png",
+    "image1Url": "/src/assets/robot-face 1.png",
+    "image2Url": "/src/assets/Robat2.gif",
+    "image3Url": "/src/assets/Curious.png",
+    "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada tincidunt libero, ac cursus risus elementum eu. Duis vitae interdum ante, id malesuada massa. Nunc viverra, ipsum a varius pharetra, sem urna dignissim ligula, sit amet aliquet magna elit nec nisi. Suspendisse vitae erat laoreet, tempus lorem a, vehicula enim. Vestibulum ipsum massa, congue sit amet dui ut, consequat mattis sapien. Nulla aliquet efficitur urna, at dapibus magna vehicula vitae. Mauris aliquam odio sed lectus imperdiet, non varius massa bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin a augue at massa vulputate congue consequat ut justo. Nulla eget nisl non diam suscipit pretium. Nullam non tincidunt mi. Mauris gravida mauris sit amet purus imperdiet, ac accumsan sapien convallis. Pellentesque et vehicula ligula. Etiam molestie purus quis pharetra auctor. Donec lobortis cursus egestas. Nullam at fringilla quam. Sed a ex id ipsum eleifend fermentum eu in dolor. Etiam nec bibendum lectus. Duis faucibus nunc velit, ac elementum enim tempus ut. Donec imperdiet congue neque, ac ultricies nunc imperdiet id. Aliquam erat volutpat. Integer nec mattis quam, quis mollis turpis. In hac habitasse platea dictumst. Nullam egestas tortor ac massa vulputate feugiat. Fusce condimentum velit."
+  },
+  {
+    "eventId": "#3",
+    "title": "Oops Event",
+    "mentorName1": "Aakash",
+    "mentorName2": "Chetan",
+    "category": "Technology",
+    "Date": "05",
+    "Month": "Feb",
+    "Years": "2024",
+    "Time": "1:00 - 2:30",
+    "location": {
+      "country": "India",
+      "State": "Maharashtra",
+      "city": "Mumbai"
+    },
+    "eventType": "Pre recorded",
+    "Highlight": "False",
+    "Button": "Watch Now",
+    "upcoming": "false",
+    "pre-recorded": "true",
+    "imageUrl": "/src/assets/Curious.png",
+    "image1Url": "/src/assets/robot-face 1.png",
+    "image2Url": "/src/assets/Robat2.gif",
+    "image3Url": "/src/assets/Curious.png",
+    "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada tincidunt libero, ac cursus risus elementum eu. Duis vitae interdum ante, id malesuada massa. Nunc viverra, ipsum a varius pharetra, sem urna dignissim ligula, sit amet aliquet magna elit nec nisi. Suspendisse vitae erat laoreet, tempus lorem a, vehicula enim. Vestibulum ipsum massa, congue sit amet dui ut, consequat mattis sapien. Nulla aliquet efficitur urna, at dapibus magna vehicula vitae. Mauris aliquam odio sed lectus imperdiet, non varius massa bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin a augue at massa vulputate congue consequat ut justo. Nulla eget nisl non diam suscipit pretium. Nullam non tincidunt mi. Mauris gravida mauris sit amet purus imperdiet, ac accumsan sapien convallis. Pellentesque et vehicula ligula. Etiam molestie purus quis pharetra auctor. Donec lobortis cursus egestas. Nullam at fringilla quam. Sed a ex id ipsum eleifend fermentum eu in dolor. Etiam nec bibendum lectus. Duis faucibus nunc velit, ac elementum enim tempus ut. Donec imperdiet congue neque, ac ultricies nunc imperdiet id. Aliquam erat volutpat. Integer nec mattis quam, quis mollis turpis. In hac habitasse platea dictumst. Nullam egestas tortor ac massa vulputate feugiat. Fusce condimentum velit."
+  }
+]

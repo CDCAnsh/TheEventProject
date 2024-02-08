@@ -4,8 +4,8 @@ import React from 'react';
 
 const CardIndividual = ({event}) => {
   return (
-    <div key={event.eventId} className="border border-slate-500 transition-all duration-700  hover:shadow-[#424242ae]  hover:shadow-custom rounded-lg w-80 m-4 bg-white-100 bg-opacity-75 p-2">
-      <div className="p-1">
+    <div key={event.eventId} className=" border border-gray-200 transition-all duration-700  hover:shadow-[#424242ae]  hover:shadow-custom rounded-lg w-80 m-4 bg-white bg-opacity-75 p-2">
+      <div className="">
         <img
           className="h-40 w-full object-cover rounded-lg"
           src={event.image}
@@ -17,7 +17,7 @@ const CardIndividual = ({event}) => {
           {event.title}
         </div>
         <br />
-        <div className="flex justify-between text-sm text-gray-600 mt-2">
+        <div className="flex justify-between text-sm text-gray-600 ">
           <div>{event.DateAndTime}</div>
           <div className="flex items-center">
             <img src="/pin.png" alt="" className="h-4" />

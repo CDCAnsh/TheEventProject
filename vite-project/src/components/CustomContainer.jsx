@@ -53,7 +53,7 @@ const CustomContainer = () => {
         </div> */}
         <div className="w-full flex bg-white p-1 border-2 border-white rounded-md mt-8 transition-all duration-500">
           
-          <input type="text" placeholder="Search Event Name" className="w-full border-[#f39f2a76]  outline-[#f39f2ad2] border-2 rounded-md pl-4 text-zinc-900  "></input>
+          <input type="text" placeholder="Search Event Name" className="w-full border-[#9b9b9b45]  outline-[#9b9b9bc0] border-2 rounded-md pl-4 text-zinc-900  "></input>
           <button className=" text-white px-4 py-2 rounded-md mt-2 ml-2 mb-2 border hover:border-[#00a4e5d6]  transition-all duration-500">
             <img src="../../public/search (2).png " className='h-[22px] active:grayscale-0' alt="" />
           </button>
