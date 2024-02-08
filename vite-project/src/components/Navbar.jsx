@@ -8,13 +8,13 @@ import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return(
-        <nav className="bg-white-800 text-black p-4 h-20 w-full">
+        <nav className="bg-white-800 text-black p-4 h-20 w-full min-h-20">
           <div className="container mx-auto flex justify-between items-center">  
             <div className="font-bold flex items-center md:text-xl ml-10 ">
               <div>
-                <img src="../..//public/inspiration-logo.png" className='h-10' alt="" />
+                <img src="../..//public/inspiration-logo.png" className='h-10 min-w-10' alt="" />
               </div>
-              <div className=''>
+              <div className='min-w-48'>
               Insipiration App
               </div>
             </div>
