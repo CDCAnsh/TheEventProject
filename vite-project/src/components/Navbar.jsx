@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import SideNav from './SideNav';
 import CustomContainer from './CustomContainer';
 import Card from './Card';
+import Hamburger from './hamburger';
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -21,7 +22,12 @@ const Navbar = () => {
             </div>
           </div>
         </Link>
-        <div className="flex gap-2">
+
+        <div className='sm:hidden'>
+          <Hamburger />
+        </div>
+
+        <div className="hidden sm:flex flex-col sm:flex-row justify-around items-center gap-10">
           <button href="#" className="  hover:bg-[#9b9b9b88] transition-all duration-400 rounded-md border-2 border-transparent  p-2 w-32">
             Home
           </button>
@@ -34,6 +40,7 @@ const Navbar = () => {
             Login/SignUp
           </button>
         </div>
+
       </div>
     </nav>
   )
