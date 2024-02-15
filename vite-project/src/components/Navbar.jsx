@@ -1,38 +1,29 @@
 // Navbar.js
 
 import React, { useState } from 'react';
-import SideNav from './SideNav';
-import CustomContainer from './CustomContainer';
-import Card from './Card';
-import {Link} from 'react-router-dom'
+import Hamburger from './hamburger';
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-  return(
-        <nav className="bg-white-800 text-black p-4 h-20 w-full min-h-20">
-          <div className="container mx-auto flex justify-between items-center">  
-            <div className="font-bold flex items-center md:text-xl ml-10 ">
-              <div>
-                <img src="../..//public/inspiration-logo.png" className='h-10 min-w-10' alt="" />
-              </div>
-              <div className='min-w-48'>
-              Insipiration App
-              </div>
-            </div>
-            <div className="flex gap-2">
-              <button href="#" className="  hover:bg-[#9b9b9b88] transition-all duration-400 rounded-md border-2 border-transparent  p-2 w-32">
-                Home
-              </button>
-              <Link to='/requestEvent'>
-              <button href="#" className="  border-transparent   hover:bg-[#9b9b9b88] transition-all duration-400 rounded-md border-2  p-2 w-32  ">
-                Request Event
-              </button>
-              </Link>
-              <button className="bg-[#941aff] hover:bg-[#] transition-all duration-500 hover:text-black text-white border-transparent font-normal text-sm md:text-base leading-normal tracking-wider flex-shrink-0 fill-current text-black-500 mix-blend-darken rounded-md rgba(136, 54, 255, 0.59); md:p-1 md:px-2 p-0.25 px-0.5">
-                Login/SignUp
-              </button>
-            </div>
-          </div>
-        </nav>
+  return (
+    <>
+      <div className='flex justify-between items-center m-3'>
+        <div className='flex justify-center items-center ms-10 gap-5'>
+          <img src='./inspiration-logo.png' className='w-10'></img>
+          <p className='text-xl lg:text-2xl font-bold'>Inspiration App</p>
+        </div>
+        <div className='md:hidden'>
+          <Hamburger />
+        </div>
+        <div className='hidden md:flex justify-center items-center mx-5 gap-2 lg:gap-10'>
+          <Link to="/" className='font-semibold text-xl lg:text-2xl hover:bg-[#9b9b9b88] rounded-full px-5 py-1'>Home</Link>
+          <Link to='/requestEvent' className='font-semibold text-xl lg:text-2xl hover:bg-[#9b9b9b88] rounded-full px-5 py-1'>Request Event</Link>
+          <Link to='/' className="bg-[#941aff] hover:bg-[#c58df6] text-white hover:text-black px-5 rounded-full font-semibold text-xl lg:text-2xl py-1">
+            Login/SignUp
+          </Link>
+        </div>
+      </div>
+    </>
   )
 };
 

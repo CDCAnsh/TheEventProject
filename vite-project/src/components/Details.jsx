@@ -5,6 +5,7 @@ import EventsList from "../assets/details.json";
 import "./TimeIcon.css";
 
 const Details = () => {
+  console.log(EventsList);
   return (
     <div>
       {/* ----------------Top Image-------------------*/}
@@ -226,9 +227,9 @@ const Details = () => {
                         borderBottomRightRadius: "15px",
                         margin: "0"
                       }}
-                      allowfullscreen=""
+                      allowFullScreen=""
                       loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
+                      referrerPolicy="no-referrer-when-downgrade"
                     />
                   </div>
                 </div>
