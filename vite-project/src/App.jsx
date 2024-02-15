@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<MainPage/>}></Route>
           <Route path='/requestEvent' element={<RequestEvent/>} ></Route>
-          <Route path='/details' element={<Details/>}></Route>
+          <Route path='/details' element={<Details />}></Route>
         </Routes>
     </div>
   )
