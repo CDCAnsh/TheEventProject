@@ -15,7 +15,7 @@ const MainPage = () => {
     <div className='flex '>
       <div className='z-20 fixed'>
         <SideNav onCategoryChange={handleCategoryChange}/>
-      </div>      
+      </div>     
       <div className='flex flex-col gap-3 flex-1 z-10 pl-10 md:ml-0'>
         <CustomContainer />
         <Card selectedCategory={selectedCategory}/>
