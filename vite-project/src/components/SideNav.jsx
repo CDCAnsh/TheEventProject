@@ -15,8 +15,9 @@ const SideNav = ({onCategoryChange}) => {
         onCategoryChange(newCategory);
       };
 
+      
   return (
-    <div className={`fixed transition-all duration-700 ${showSideNav ? 'w-60' : 'w-12'} h-full `}>
+    <div className={`top-0 fixed transition-all duration-700 ${showSideNav ? 'w-60' : 'w-12'} h-full `}>
     <div className={showSideNav ? "w-full h-full pt-6 bg-gray-100 text-black" : 'w-12 h-full pt-6'}>
         <div className='flex justify-end'>
             {showSideNav ? <img src='../../public/cancel.png' className='cursor-pointer h-5 mr-6'onClick={showSide} ></img> : <img src='../../public/hamburger.png' className='h-5 mr-4 cursor-pointer' onClick={showSide}></img>}
