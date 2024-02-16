@@ -5,7 +5,7 @@ import React from 'react';
 const CardIndividual = ({event}) => {
   console.log(typeof event.DateAndTime);
   return (
-    <div key={event.eventId} className="border-2 rounded-lg p-2 flex flex-col justify-center items-center m-3">
+    <div key={event.eventId} className="border-2 rounded-lg p-2 flex flex-col justify-between items-center m-3 ">
       <div className="">
         <img
           className="w-full rounded-lg sm:h-40"

@@ -10,7 +10,6 @@ function App() {
 
   return (
     <div className=' bg-[#fefeff]'>
-      <Navbar />
         <Routes>
           <Route path='/' element={<MainPage/>}></Route>
           <Route path='/requestEvent' element={<RequestEvent/>} ></Route>

@@ -31,7 +31,7 @@ const Card = ({selectedCategory}) => {
       
       <div  onClick={handle} className={activeEvent === 'schedule' ? 'text-xl transition-all duration-400 border-b-4 border-customColor cursor-pointer hover:text-customColor' : 'text-xl transition-all duration-400 border-b-4 border-side cursor-pointer hover:text-customColor'}><a >Schedule Event</a></div> */}
     </div>
-    <div className="flex justify-center sm:justify-start">
+    <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
     {events
         .filter((item) => item.category === selectedCategory)
         .map((item, index) => {
