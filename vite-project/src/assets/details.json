@@ -12,7 +12,11 @@
     "location": {
       "country": "India",
       "State": "Karnataka",
-      "city": "Bangalore"
+      "city": "Bangalore",
+      "coordinates": {
+        "latitude": 12.9716,
+        "longitude": 77.5946
+      }
     },
     "eventType": "Live",
     "Highlight": "True",
@@ -37,8 +41,12 @@
     "Time": "21:00 - 22:30",
     "location": {
       "country": "India",
-      "State": "Maharashtra",
-      "city": "Pune"
+      "State": "Karnataka",
+      "city": "Bangalore",
+      "coordinates": {
+        "latitude": 12.9716,
+        "longitude": 77.5946
+      }
     },
     "eventType": "Pre recorded",
     "Highlight": "False",
@@ -63,8 +71,12 @@
     "Time": "1:00 - 2:30",
     "location": {
       "country": "India",
-      "State": "Maharashtra",
-      "city": "Mumbai"
+      "State": "Karnataka",
+      "city": "Bangalore",
+      "coordinates": {
+        "latitude": 12.9716,
+        "longitude": 77.5946
+      }
     },
     "eventType": "Pre recorded",
     "Highlight": "False",

@@ -201,35 +201,29 @@ const Details = () => {
               </div>
 
               {/* --------------------------Map Section-------------------- */}
-              <div
-                className="map my-5 bg-dark-subtle"
-                style={{ borderRadius: "20px", alignItems: "end" }}
-              >
-                <div className="location" style={{ margin: "0", padding: "0" }}>
-                  <div
-                    className="icons d-flex align-items-center h5 p-1 ms-1"
-                    style={{ margin: "0", padding: "0" }}
-                  >
+              {/* Map Section */}
+              <div className="map my-5  bg-dark-subtle" style={{ borderRadius: "20px", alignItems: "end" }}>
+                <div className="location">
+                  <div className="icons d-flex align-items-center h5 p-1 ms-1">
                     <PlaceOutlinedIcon />
-                    Location
+                    {`${event.location.city}, ${event.location.State}, ${event.location.country}`}
                   </div>
                   <div className="loc align-self-end">
                     <iframe
-                      src={event.mapEmbedUrl}
-                      width="100%"
-                      height="100%"
-                      style={{
-                        border: "0",
-                        marginBottom: "0",
-                        padding: "0",
-                        borderBottomLeftRadius: "15px",
-                        borderBottomRightRadius: "15px",
-                        margin: "0"
-                      }}
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    />
+                      src={`https://maps.google.com/maps?q=${event.location.coordinates.latitude},${event.location.coordinates.longitude}&z=15&output=embed`}
+                    width="100%"
+                    height="100%"
+                    style={{
+                      border: "0",
+                      marginBottom: "0",
+                      padding: "0",
+                      borderBottomLeftRadius: "15px",
+                      borderBottomRightRadius: "15px",
+                      margin: "0"
+                    }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"/>
                   </div>
                 </div>
               </div>
