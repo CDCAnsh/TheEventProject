@@ -22,16 +22,16 @@ const Card = ({selectedCategory}) => {
 
   return (
     <>
-    <div className='flex gap-8 rounded justify-center md:justify-around md:ml-14 md:my-4 md:mt-4 md:mb-0 p-4 w-full md:w-[400px]'>
-      <div onClick={handleUpcomingEvent} className={activeEvent === 'upcoming' ? 'text-xl transition-all duration-400  cursor-pointer hover:text-[#f39f2ad2]' : 'text-xl transition-all duration-400   cursor-pointer hover:text-[#f39f2ad2]'}>Upcoming Events</div>
+    <div className='flex justify-center sm:justify-start items-center gap-2 md:gap-5 mx-3'>
+      <div onClick={handleUpcomingEvent} className={activeEvent === 'upcoming' ? 'text-md sm:text-xl text-center font-semibold hover:text-orange-500' : 'text-md sm:text-xl text-center font-semibold hover:text-orange-500'}>Upcoming Events</div>
 
-      <div onClick={handlePrerecordedEvent} className={activeEvent === 'pre-recorded' ? 'text-xl transition-all duration-400   cursor-pointer hover:text-[#f39f2ad2]' : 'text-xl transition-all duration-400   cursor-pointer hover:text-[#f39f2ad2]'}>Pre-recorded Events</div>
+      <div onClick={handlePrerecordedEvent} className={activeEvent === 'pre-recorded' ? 'text-md sm:text-xl text-center font-semibold hover:text-orange-500' : 'text-md sm:text-xl text-center font-semibold hover:text-orange-500'}>Pre-recorded Events</div>
 
       {/* <div onClick={handle} className={activeEvent === 'request' ? 'text-xl transition-all duration-400 border-b-4 border-customColor cursor-pointer hover:text-customColor' : 'text-xl transition-all duration-400 border-b-4 border-side cursor-pointer hover:text-customColor'}><a>Request Event</a></div> 
       
       <div  onClick={handle} className={activeEvent === 'schedule' ? 'text-xl transition-all duration-400 border-b-4 border-customColor cursor-pointer hover:text-customColor' : 'text-xl transition-all duration-400 border-b-4 border-side cursor-pointer hover:text-customColor'}><a >Schedule Event</a></div> */}
     </div>
-    <div className="flex justify-center mr-6 md:justify-start md:ml-10 md:mr-0 flex-wrap">
+    <div className="flex justify-center sm:justify-start">
     {events
         .filter((item) => item.category === selectedCategory)
         .map((item, index) => {

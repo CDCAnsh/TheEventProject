@@ -51,11 +51,12 @@ const CustomContainer = () => {
             <p className="text-4xl text-center leading-[0]" ref={titleRefs.current[3]}>Sports</p>
           </div>
         </div> */}
-        <div className="w-full flex bg-white p-1 border-2 border-white rounded-md mt-8 transition-all duration-500">
+        <div className="w-full flex flex-col sm:flex-row bg-white p-1 border-2 border-white rounded-md mt-8 transition-all duration-500 gap-3">
           
-          <input type="text" placeholder="Search Event Name" className="w-full border-[#9b9b9b45]  outline-[#9b9b9bc0] border-2 rounded-md pl-4 text-zinc-900  "></input>
-          <button className=" text-white px-4 py-2 rounded-md mt-2 ml-2 mb-2 border hover:border-[#00a4e5d6]  transition-all duration-500">
-            <img src="../../public/search (2).png " className='h-[22px] active:grayscale-0' alt="" />
+          <input type="text" placeholder="Search Event Name" className="w-full border-[#9b9b9b45] h-14  outline-[#9b9b9bc0] border-2 rounded-md pl-4 text-zinc-900  "></input>
+          <button className=" text-white border-2 rounded-lg flex justify-center items-center">
+            <img src="../../public/search (2).png " className=' hidden sm:block h-[22px] active:grayscale-0 m-4' alt="" />
+            <p className="sm:hidden text-black font-semibold text-xl">Search</p>
           </button>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import GridViewIcon from '@mui/icons-material/GridView';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from "react-router-dom";
 
 export default function Hamburger() {
 
@@ -15,11 +16,11 @@ export default function Hamburger() {
             </div>
             {isOpen && (
                 <div className="flex flex-col items-center justify-center w-full h-screen bg-white fixed top-0 left-0 z-40 animate-[slide-in]">
-                    <a href="#" className="text-2xl font-bold mb-4">Home</a>
-                    <a href="#" className="text-2xl font-bold mb-4">Request Event</a>
-                    <button className="bg-purple-400 font-normal text-sm md:text-base leading-normal tracking-wider flex-shrink-0 fill-current text-black-500 mix-blend-darken rounded-2xl rgba(136, 54, 255, 0.59); md:p-1 md:px-2 p-0.25 px-0.5">
+                    <Link to="/" className='font-semibold text-2xl hover:bg-[#9b9b9b88] rounded-full px-5 py-1'>Home</Link>
+                    <Link to='/requestEvent' className='font-semibold text-2xl hover:bg-[#9b9b9b88] rounded-full px-5 py-1'>Request Event</Link>
+                    <Link to='/' className="bg-[#941aff] hover:bg-[#c58df6] text-white hover:text-black px-5 rounded-full font-semibold text-2xl py-1">
                         Login/SignUp
-                    </button>
+                    </Link>
                 </div>
             )}
         </>

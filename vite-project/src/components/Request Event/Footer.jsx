@@ -10,9 +10,9 @@ const Footer = () => {
                     Button
                 </button> 
             </div >
-            <div className="flex justify-center space-x-20 mt-10">
-                <label className="text-black text-xl font-normal font-['Inter'] tracking-widest">Privacy Policy</label>
-                <label className="text-black text-xl font-normal font-['Inter'] tracking-widest">Terms and Conditions</label>
+            <div className="flex justify-center items-center mt-10 gap-7 md:gap-20 w-full">
+                <label className="text-black text-sm md:text-xl font-normal font-['Inter'] tracking-widest w-full text-end">Privacy Policy</label>
+                <label className="text-black text-sm md:text-xl font-normal font-['Inter'] tracking-widest w-full">Terms and Conditions</label>
             </div> 
         </div>
     );

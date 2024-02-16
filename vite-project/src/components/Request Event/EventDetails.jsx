@@ -1,40 +1,46 @@
-import React from "react";
+import { useState } from "react"
+import TimePicker from "react-time-picker"
+import 'react-time-picker/dist/TimePicker.css';
+import 'react-clock/dist/Clock.css';
 
-const EventDetails = () => {
-  return (
-    <div className="mt-6 flex  ml-12">
-      <div className="">
-        <div className="w-[100%] border-4 border-dashed border-purple-400 mt-8 p-4 h-64">
-          <p className="w-[243px] text-black text-3xl font-normal font-['Inter'] tracking-[3px]">Event Details</p>
+export default function EventDetails() {
 
-          <div className="flex flex-wrap mb-4 space-x-8">
-            <div className="w-[45%] pr-4">
-              <label className="w-[148px] h-6 text-black text-xl font-normal font-['Inter'] tracking-widest">Event Name</label>
-              <input className="w-[215px] h-[41px] bg-white rounded-[7px] border border-fuchsia-500" type="text" />
+    const [start_time, setStartTime] = useState('10:00');
+    const [end_time, setEndTime] = useState('10:00');
+
+    return (
+        <>
+            <div className="flex flex-col justify-center items-center rounded-lg border-purple-500 border-dashed border-4 p-3 shadow-xl shadow-purple-300">
+                <p className="w-full text-xl font-semibold">Event Detail</p>
+                <div className="flex flex-col md:flex-row justify-around items-center w-full my-3 gap-6">
+                    <div className="flex flex-col w-full">
+                        <label htmlFor="event_name" className="my-2 font-semibold w-full">Event Name</label>
+                        <input type="text" name="event_name" id="event_name" placeholder="Event Name" className="border-[1px] border-purple-500 rounded-md px-3 py-1" />
+                    </div>
+                    <div className="flex flex-col w-full">
+                        <label htmlFor="category" className="my-2 font-semibold w-full">Category</label>
+                        <input type="text" name="category" id="category" placeholder="Category" className="border-[1px] border-purple-500 rounded-md px-3 py-1" />
+                    </div>
+                </div>
+                <div className="flex flex-col md:flex-row justify-around items-center w-full gap-3 my-5">
+                    <div className="flex flex-col w-full">
+                        <p className="my-2 font-semibold w-full">Event Start Time</p>
+                        <TimePicker
+                            onChange={setStartTime}
+                            value={start_time}
+                            className="border-[1px] border-purple-500 rounded-md px-3 py-1"
+                        />
+                    </div>
+                    <div className="flex flex-col w-full">
+                        <p className="my-2 font-semibold w-full">Event End Time</p>
+                        <TimePicker
+                            onChange={setEndTime}
+                            value={end_time}
+                            className="border-[1px] border-purple-500 rounded-md px-3 py-1"
+                        />
+                    </div>
+                </div>
             </div>
-
-            <div className="w-[45%]">
-              <label className="w-[148px] h-6 text-black text-xl font-normal font-['Inter'] tracking-widest">Category</label>
-              <input className="w-[215px] h-[41px] bg-white rounded-[7px] border border-fuchsia-500" type="text" />
-            </div>
-          </div>
-
-          <div className="flex flex-wrap space-x-8">
-            <div className="w-[45%] pr-4">
-              <label className="w-[148px] h-6 text-black text-xl font-normal font-['Inter'] tracking-widest">Event Start Time</label>
-              <input className="w-[215px] h-[41px] bg-white rounded-[7px] border border-fuchsia-500" type="text" />
-            </div>
-
-            <div className="w-[45%]">
-              <label className="w-[148px] h-6 text-black text-xl font-normal font-['Inter'] tracking-widest">Event End Time</label>
-              <input className="w-[215px] h-[41px] bg-white rounded-[7px] border border-fuchsia-500" type="text" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default EventDetails;
- 
+        </>
+    )
+}

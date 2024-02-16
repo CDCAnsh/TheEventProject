@@ -5,6 +5,7 @@ import EventsList from "../assets/details.json";
 import "./TimeIcon.css";
 
 const Details = () => {
+  console.log(EventsList);
   return (
     <div>
       {/* ----------------Top Image-------------------*/}
@@ -211,19 +212,20 @@ const Details = () => {
                   <div className="loc align-self-end">
                     <iframe
                       src={`https://maps.google.com/maps?q=${event.location.coordinates.latitude},${event.location.coordinates.longitude}&z=15&output=embed`}
-                    width="100%"
-                    height="100%"
-                    style={{
-                      border: "0",
-                      marginBottom: "0",
-                      padding: "0",
-                      borderBottomLeftRadius: "15px",
-                      borderBottomRightRadius: "15px",
-                      margin: "0"
-                    }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"/>
+                      width="100%"
+                      height="100%"
+                      style={{
+                        border: "0",
+                        marginBottom: "0",
+                        padding: "0",
+                        borderBottomLeftRadius: "15px",
+                        borderBottomRightRadius: "15px",
+                        margin: "0"
+                      }}
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    />
                   </div>
                 </div>
               </div>
