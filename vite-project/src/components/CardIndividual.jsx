@@ -3,32 +3,36 @@
 import React from 'react';
 
 const CardIndividual = ({event}) => {
+  console.log(typeof event.DateAndTime);
   return (
-    <div key={event.eventId} className="border border-customColor transition-all duration-700 shadow-2xl  hover:shadow-[#8800ffae]  hover:shadow-2xl rounded-lg w-80 m-4 bg-purple-100 bg-opacity-75 p-2">
-      <div className="p-1">
+    <div key={event.eventId} className="border-2 rounded-lg p-2 flex flex-col justify-center items-center m-3">
+      <div className="">
         <img
-          className="h-40 w-full object-cover rounded-lg"
+          className="w-full rounded-lg sm:h-40"
           src={event.image}
           alt=""
         />
       </div>
-      <div className="p-2">
-        <div className="text-2xl font-bold text-black-800 h-12">
+      <div className="w-full p-2">
+        <div className="text-xl text-center font-semibold">
           {event.title}
         </div>
         <br />
-        <div className="flex justify-between mt-2">
-          <div>{event.DateAndTime}</div>
+        <div className="flex justify-between text-sm text-gray-600 ">
+          <div className='flex flex-col sm:flex-row gap-1'>
+            <p className=''>{event.DateAndTime.substr(0,10)}</p>
+            <p>{event.DateAndTime.substr(11,13)}</p>
+          </div>
           <div className="flex items-center">
             <img src="/pin.png" alt="" className="h-4" />
-            <span className="ml-1">{event.location}</span>
+            <span className="ml-1 font-semibold text-md">{event.location}</span>
           </div>
         </div>
-        <div className="mt-2 text-gray-700 font-medium">{event.mentorName}</div>
-        <div className="flex justify-between items-center mt-2">
+        <div className="mt-2 text-gray-600 font-medium">{event.mentorName}</div>
+        <div className="flex flex-col sm:flex-row justify-between items-center mt-2 gap-3">
           <div>{event.category}</div>
-          <div>
-            <button className="border-4 border-transparent bg-[#ac4dff48] hover:bg-customColor hover:text-white rounded-md transition-all duration-500 text-black px-4 py-2">
+          <div className='w-full sm:w-auto'>
+            <button className="border-3 border-transparent bg-[#00a4e5d6] hover:bg-[#f39f2ad2] w-full rounded-md transition-all duration-500 text-white px-4 py-2">
               {event.Button}
             </button>
           </div>

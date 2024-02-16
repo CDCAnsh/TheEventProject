@@ -8,36 +8,36 @@ const CustomContainer = () => {
   const titleRefs = useRef([React.createRef(), React.createRef(), React.createRef(), React.createRef()]);
   const baseRefs = useRef([React.createRef(), React.createRef(), React.createRef(), React.createRef()])
 
-  useEffect(() => {
-    const tl = gsap.timeline();
+  // useEffect(() => {
+  //   const tl = gsap.timeline();
 
-    titleRefs.current.forEach((titleRef) => {
-      const title = titleRef.current;
-      title.style.color = '#ac4dff';
+  //   titleRefs.current.forEach((titleRef) => {
+  //     const title = titleRef.current;
+  //     title.style.color = '#ac4dff';
 
-      tl.from(title, { opacity: 0,rotateX:-90,y:80,stagger:0.2,duration: 2 }, "<")
-      .to(title, { opacity: 1, y:-80,rotateX:90,stagger:0.2,duration: 2}, "<1");
-    });
-  }, []);
+  //     tl.from(title, { opacity: 0,rotateX:-90,y:80,stagger:0.2,duration: 2 }, "<")
+  //     .to(title, { opacity: 1, y:-80,rotateX:90,stagger:0.2,duration: 2}, "<1");
+  //   });
+  // }, []);
 
 
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      baseRefs.current.forEach((baseRef)=>{
-        baseRef.current.style.visibility = 'visible';
-        if(window.innerWidth<=1024){
-          baseRef.current.style.display = 'none';
-        }
-      })
-    }, 7500);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     baseRefs.current.forEach((baseRef)=>{
+  //       baseRef.current.style.visibility = 'visible';
+  //       if(window.innerWidth<=1024){
+  //         baseRef.current.style.display = 'none';
+  //       }
+  //     })
+  //   }, 7500);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <div className="flex items-center justify-center">
       <div className="w-5/6 h-48 flex-shrink-0 rounded-lg flex flex-col items-center justify-end p-2  ">
-        <div>
+        {/* <div>
           <div className="flex w-[900px] justify-between text-2xl invisible lg:visible  ">
             <div ref={baseRefs.current[0]} className="invisible h-20 text-4xl pt-12 text-[#5f16ec]">Spirituality</div>
             <div ref={baseRefs.current[1]} className="invisible text-2xl text-[#2d12a4]">Technology</div>
@@ -50,11 +50,13 @@ const CustomContainer = () => {
             <p className="text-4xl text-center leading-[0]" ref={titleRefs.current[2]}>Business</p>
             <p className="text-4xl text-center leading-[0]" ref={titleRefs.current[3]}>Sports</p>
           </div>
-        </div>
-        <div className="w-full flex bg-white p-1 border-2 border-white rounded-md mt-8">
-          <input type="text" placeholder="Search Event Name" className="w-full border-white-700   outline-customColor border-2 rounded-md p-2 text-zinc-700  "></input>
-          <button className=" text-white px-4 py-2 rounded-md mt-2 ml-2 mb-2 hover:bg-button transition-all duration-500">
-            <img src="../../public/search (2).png " className='h-[22px] active:grayscale-0' alt="" />
+        </div> */}
+        <div className="w-full flex flex-col sm:flex-row bg-white p-1 border-2 border-white rounded-md mt-8 transition-all duration-500 gap-3">
+          
+          <input type="text" placeholder="Search Event Name" className="w-full border-[#9b9b9b45] h-14  outline-[#9b9b9bc0] border-2 rounded-md pl-4 text-zinc-900  "></input>
+          <button className=" text-white border-2 rounded-lg flex justify-center items-center">
+            <img src="../../public/search (2).png " className=' hidden sm:block h-[22px] active:grayscale-0 m-4' alt="" />
+            <p className="sm:hidden text-black font-semibold text-xl">Search</p>
           </button>
         </div>
       </div>

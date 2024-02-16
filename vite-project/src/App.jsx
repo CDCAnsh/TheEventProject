@@ -2,15 +2,19 @@ import { useState } from 'react'
 import MainPage from './components/MainPage';
 import {Routes,Route} from 'react-router-dom'
 import RequestEvent from './components/RequestEvent'
+import Details from './components/Details';
+import Navbar from './components/Navbar';
 
 
 function App() {
 
   return (
-    <div className=' bg-gradient-to-r from-[#eaf3fd] via-[#fdfdfd] to-[#ffebdc] lg:w-full w-fit'>
+    <div className=' bg-[#fefeff]'>
+      <Navbar />
         <Routes>
           <Route path='/' element={<MainPage/>}></Route>
           <Route path='/requestEvent' element={<RequestEvent/>} ></Route>
+          <Route path='/details' element={<Details />}></Route>
         </Routes>
     </div>
   )
