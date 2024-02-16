@@ -2,32 +2,42 @@ import React from "react";
 
 const OtherDetails = () => {
   return (
-    <div className="flex flex-col justify-center items-center rounded-lg border-purple-500 border-dashed border-4 p-5 shadow-xl shadow-purple-300 md:me-20 h-full">
-                <p className="w-full text-xl font-semibold">Other Details</p>
-                <div className="flex justify-around items-center w-full my-3 gap-6">
-                    <div className="flex flex-col w-1/2">
-                        <label htmlFor="event_description" className="my-2 font-semibold">Event Description</label>
-                        <textarea name="event_description" id="event_description" placeholder="Describe your event in brief" className="border-[1px] border-purple-500 rounded-md px-3 py-1 h-36" />
-                    </div>
-                    <div className="flex flex-col w-1/2">
-                        <label htmlFor="host_of_the_event" className="my-2 font-semibold">Host of the Event</label>
-                        <textarea name="host_of_the_event" id="host_of_the_event" placeholder="Who's hosting the event" className="border-[1px] border-purple-500 rounded-md px-3 py-1 h-36" />
-                    </div>
-                </div>
-                <div className="flex justify-around items-center w-full my-3 gap-6">
-                    <div className="flex flex-col w-1/2">
-                        <label htmlFor="target_audience" className="my-2 font-semibold">Target Audience</label>
-                        <textarea name="target_audience" id="target_audience" placeholder="Expected target audience to your event" className="border-[1px] border-purple-500 rounded-md px-3 py-1 h-36" />
-                    </div>
-                    <div className="flex flex-col w-1/2">
-                        <label htmlFor="event_sponsors" className="my-2 font-semibold">Event Sponsors</label>
-                        <textarea name="event_sponsors" id="event_sponsors" placeholder="Sponsors of the Event" className="border-[1px] border-purple-500 rounded-md px-3 py-1 h-36" />
-                    </div>
-                </div>
-                <div className="flex flex-col w-full">
-                    <label htmlFor="event_link" className="my-2 font-semibold">Link for the Event</label>
-                    <input type="text" name="event_link" id="event_link" placeholder="Eg : https://curiousdevelopers.in/" className="border-[1px] border-purple-500 rounded-md px-3 py-1" />
-                </div>
+    <div className="flex flex-row ml-40  mt-20">
+      <div className="flex flex-col w-[90%] border-4 border-dashed border-purple-400 mt-8 p-4  ">
+        <p className="w-[243px] text-black text-3xl font-normal font-['Inter'] tracking-[3px] ml-2  ">Other Details</p>
+
+        <div className="flex flex-wrap space-x-4">
+          <div className="w-[45%] pr-4">
+            <label className="w-[258px] text-black text-xl font-normal font-['Inter'] tracking-widest">Event Description</label>
+            <textarea className="w-[296px] h-[163px] bg-white rounded-[7px] border border-fuchsia-500" />
+          </div>
+
+          <div className="w-[45%]">
+            <label className="w-[258px] text-black text-xl font-normal font-['Inter'] tracking-widest ml-6">Host of the Event</label>
+            <textarea className="w-[296px] h-[163px] bg-white rounded-[7px] border border-fuchsia-500 ml-6" />
+          </div>
+        </div>
+
+        <div className="flex flex-wrap mt-4 space-x-4">
+          <div className="w-[45%] pr-4">
+            <label className="w-[258px] text-black text-xl font-normal font-['Inter'] tracking-widest">Target Audience</label>
+            <textarea className="w-[296px] h-[163px] bg-white rounded-[7px] border border-fuchsia-500" />
+          </div>
+
+          <div className="w-[45%]">
+            <label className="w-[258px] text-black text-xl font-normal font-['Inter'] tracking-widest ml-6">Event Sponsors</label>
+            <textarea className="w-[296px] h-[163px] bg-white rounded-[7px] border border-fuchsia-500 ml-6" />
+          </div>
+        </div>
+
+        <div className="flex flex-wrap">
+          <div className="mt-4 w-[45%]">
+            <label className="w-[258px] text-black text-xl font-normal font-['Inter'] tracking-widest">Link of the Event</label>
+            <textarea className="w-[580px] h-12 bg-white rounded-[7px] border border-fuchsia-500" />
+          </div>
+
+        </div>
+      </div>
     </div>
   );
 };
