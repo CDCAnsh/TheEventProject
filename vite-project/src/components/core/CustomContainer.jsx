@@ -55,7 +55,7 @@ const CustomContainer = () => {
           
           <input type="text" placeholder="Search Event Name" className="w-full border-[#9b9b9b45] h-14  outline-[#9b9b9bc0] border-2 rounded-md pl-4 text-zinc-900  "></input>
           <button className=" text-white border-2 rounded-lg flex justify-center items-center">
-            <img src="../../public/search (2).png " className=' hidden sm:block h-[22px] active:grayscale-0 m-4' alt="" />
+            <img src="/public/search (2).png " className=' hidden sm:block h-[22px] active:grayscale-0 m-4' alt="" />
             <p className="sm:hidden text-black font-semibold text-xl">Search</p>
           </button>
         </div>

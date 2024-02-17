@@ -1,8 +1,8 @@
 import React from 'react'
-import ContactInfo from './Request Event/ContactInfo'
-import EventDetails from './Request Event/EventDetails'
-import OtherDetails from './Request Event/OtherDetails'
-import Footer from './Request Event/Footer'
+import ContactInfo from './ContactInfo'
+import EventDetails from './EventDetails'
+import OtherDetails from './OtherDetails'
+import Footer from '../common/Footer'
 
 const RequestEvent = () => {
     return (
@@ -18,7 +18,7 @@ const RequestEvent = () => {
                 </div>
             </div>
             <Footer />
-    </div >
+     </div >
   )
 }
 

@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import MainPage from './components/MainPage';
+import MainPage from './pages/MainPage';
 import {Routes,Route} from 'react-router-dom'
-import RequestEvent from './components/RequestEvent'
-import Details from './components/Details';
-import Navbar from './components/Navbar';
+// import RequestEvent from './components/RequestEvent'
+import Details from './constants/details.json';
+import Navbar from './components/common/Navbar';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <div className=' bg-[#fefeff]'>
         <Routes>
           <Route path='/' element={<MainPage/>}></Route>
-          <Route path='/requestEvent' element={<RequestEvent/>} ></Route>
+          {/* <Route path='/requestEvent' element={<RequestEvent/>} ></Route> */}
           <Route path='/details' element={<Details />}></Route>
         </Routes>
     </div>

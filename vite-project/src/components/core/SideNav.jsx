@@ -20,7 +20,7 @@ const SideNav = ({onCategoryChange}) => {
     <div className={`top-0 fixed transition-all duration-700 ${showSideNav ? 'w-60' : 'w-12'} h-full `}>
     <div className={showSideNav ? "w-full h-full pt-6 bg-gray-100 text-black" : 'w-12 h-full pt-6'}>
         <div className='flex justify-end'>
-            {showSideNav ? <img src='../../public/cancel.png' className='cursor-pointer h-5 mr-6'onClick={showSide} ></img> : <img src='../../public/hamburger.png' className='h-5 mr-4 cursor-pointer' onClick={showSide}></img>}
+            {showSideNav ? <img src='/public/cancel.png' className='cursor-pointer h-5 mr-6'onClick={showSide} ></img> : <img src='/public/hamburger.png' className='h-5 mr-4 cursor-pointer' onClick={showSide}></img>}
         </div>
         <div className="text-xl">
             <div className='pl-6 font-semibold'>
@@ -31,7 +31,7 @@ const SideNav = ({onCategoryChange}) => {
         <div className={showSideNav ? 'flex flex-col mt-5 font-medium' :' font-medium flex flex-col items-center mt-5'}>
             <div className={showSideNav ? 'hover:bg-white transition-all duration-300 hover:text-customColor cursor-pointer pl-5 h-10 flex items-center  ' : 'h-10 w-12 flex justify-center items-center hover:bg-side transition-all duration-300 hover:text-white'} onClick={()=>handleCategoryClick("Spirituality")}>
                 <div className={styles.icon}>
-                    <img className='ml-3 h-6  '  src='../../public/s1.png' alt="" />
+                    <img className='ml-3 h-6  '  src='/s1.png' alt="" />
                 </div>
                 <div className='pl-3'>
                     {showSideNav ? 'Spiritual' : null}
@@ -39,7 +39,7 @@ const SideNav = ({onCategoryChange}) => {
             </div>
             <div className={showSideNav ? 'hover:bg-white transition-all duration-300 hover:text-customColor cursor-pointer pl-5 h-10 flex items-center' : 'h-10 w-12 flex justify-center items-center hover:bg-side transition-all duration-300 hover:text-white'} onClick={()=>handleCategoryClick("Technology")}>
                 <div className={styles.icon}>
-                    <img className='ml-3 h-6  '   src='../../public/bulb.png' alt="" />
+                    <img className='ml-3 h-6  '   src='/bulb.png' alt="" />
                 </div>
                 <div className='pl-3'>
                     {showSideNav ? 'Technology' : null}
@@ -47,7 +47,7 @@ const SideNav = ({onCategoryChange}) => {
             </div>
             <div className={showSideNav ? 'hover:bg-white transition-all duration-300 hover:text-customColor cursor-pointer pl-5 h-10 flex items-center' : 'h-10 w-12 flex justify-center items-center hover:bg-side transition-all duration-300 hover:text-white'}  onClick={()=>handleCategoryClick("Business")}>
                 <div className={styles.icon}>
-                    <img className='ml-3 h-6 '   src='../../public/briefcase.png' alt="" />
+                    <img className='ml-3 h-6 '   src='/briefcase.png' alt="" />
                 </div>
                 <div className='pl-3'>
                     {showSideNav ? 'Business' : null}
@@ -55,7 +55,7 @@ const SideNav = ({onCategoryChange}) => {
             </div>
             <div className={showSideNav ? 'hover:bg-white transition-all  duration-300 hover:text-customColor cursor-pointer pl-5 h-10 flex items-center' : ' h-10 w-12 flex justify-center items-center hover:bg-side transition-all duration-300 hover:text-white'} onClick={()=>handleCategoryClick("Sports")}>
                 <div className={styles.icon}>
-                    <img className='ml-3 h-6 '  src='../../public/scolor.png' alt="" />
+                    <img className='ml-3 h-6 '  src='/scolor.png' alt="" />
                 </div>
                 <div className='pl-3'>
                     {showSideNav ? 'Sports' : null}

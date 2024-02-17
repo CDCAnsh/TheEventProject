@@ -1,7 +1,7 @@
 import {React,useState} from 'react'
-import CustomContainer from './CustomContainer'
-import SideNav from './SideNav'
-import Card from './Card'
+import CustomContainer from '../components/core/CustomContainer'
+import SideNav from '../components/core/SideNav'
+import Card from '../components/common/Card'
 
 const MainPage = () => {
 
@@ -17,7 +17,7 @@ const MainPage = () => {
         <SideNav onCategoryChange={handleCategoryChange}/>
       </div>     
       <div className='flex flex-col gap-3 flex-1 z-10 pl-10 md:ml-0'>
-        <CustomContainer />
+        <CustomContainer/>
         <Card selectedCategory={selectedCategory}/>
       </div>
     </div>

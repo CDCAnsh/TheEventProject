@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import data from '../assets/data.json';
+import data from './data.json';
 import CardIndividual from './CardIndividual';
 
 const Card = ({selectedCategory}) => {
