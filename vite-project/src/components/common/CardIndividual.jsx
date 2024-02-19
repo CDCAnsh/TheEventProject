@@ -8,7 +8,7 @@ const CardIndividual = ({event}) => {
     <div key={event.eventId} className="border-2 rounded-lg p-2 flex flex-col justify-between items-center m-3 ">
       <div className="">
         <img
-          className="w-full rounded-lg sm:h-40"
+          className="w-full rounded-lg md:h-40 "
           src={event.image}
           alt=""
         />
