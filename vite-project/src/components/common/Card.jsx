@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import data from './data.json';
+import data from "../../constants/data.json";
 import CardIndividual from './CardIndividual';
 import { Link } from 'react-router-dom';
 import SideNav from '../core/SideNav';
