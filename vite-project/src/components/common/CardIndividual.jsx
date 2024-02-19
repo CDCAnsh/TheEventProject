@@ -32,7 +32,7 @@ const CardIndividual = ({event}) => {
         <div className="flex flex-col sm:flex-row justify-between items-center mt-2 gap-3">
           <div>{event.category}</div>
           <div className='w-full sm:w-auto'>
-            <button className="border-3 border-transparent bg-[#00a4e5d6] hover:bg-[#f39f2ad2] w-full rounded-md transition-all duration-500 text-white px-4 py-2">
+            <button className="border-3 border-transparent bg-customColor hover:bg-[#f39f2ad2] w-full rounded-md transition-all duration-500 text-white px-4 py-2">
               {event.Button}
             </button>
           </div>
