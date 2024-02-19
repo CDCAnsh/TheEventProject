@@ -36,7 +36,7 @@ const CustomContainer = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="w-5/6 h-48 flex-shrink-0 rounded-lg flex flex-col items-center justify-end p-2  ">
+      <div className="w-3/4 h-48 flex-shrink-0 rounded-lg flex flex-col items-center justify-end p-2  ">
         {/* <div>
           <div className="flex w-[900px] justify-between text-2xl invisible lg:visible  ">
             <div ref={baseRefs.current[0]} className="invisible h-20 text-4xl pt-12 text-[#5f16ec]">Spirituality</div>
