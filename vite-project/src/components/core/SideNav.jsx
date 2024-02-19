@@ -11,32 +11,32 @@ const SideNav = ({ onCategoryChange }) => {
 
   return (
     <div className="w-full md:w-56 p-3 md:p-0 md:m-2">
-      <div className="w-full md:h-96 rounded-lg pt-6 bg-gray-100 opacity-100 text-black">
+      <div className="w-full md:h-screen rounded-lg pt-6 bg-gray-100 opacity-100 text-black">
         <div className="">
           <div className="block font-semibold text-xl text-center">
             Categories
             <hr className="w-24"></hr>
           </div>
           <div className="flex flex-col font-medium mt-6">
-            <div className="text-customColor cursor-pointer pl-5 h-10 flex items-center hover:bg-white" onClick={() => handleCategoryClick("Spirituality")}>
+            <div className="text-customColor cursor-pointer pl-5 h-10 flex items-center justify-center md:justify-start hover:bg-white" onClick={() => handleCategoryClick("Spirituality")}>
               <div className={styles.icon}>
                 <img className="ml-3 h-6  " src="../../public/s1.png" alt="" />
               </div>
               <div className="pl-3">Spiritual</div>
             </div>
-            <div className="text-customColor cursor-pointer pl-5 h-10 flex items-center hover:bg-white" onClick={() => handleCategoryClick("Technology")}>
+            <div className="text-customColor cursor-pointer pl-5 h-10 flex items-center justify-center md:justify-start  hover:bg-white" onClick={() => handleCategoryClick("Technology")}>
               <div className={styles.icon}>
-                <img className="ml-3 h-6  " src='../../public/bulb.png' alt="" />
+                <img className="ml-3  h-6  " src='../../public/bulb.png' alt="" />
               </div>
               <div className="pl-3">Technology</div>
             </div>
-            <div className="text-customColor cursor-pointer pl-5 h-10 flex items-center hover:bg-white" onClick={() => handleCategoryClick("Business")}>
+            <div className="text-customColor cursor-pointer pl-5 h-10 flex items-center justify-center md:justify-start hover:bg-white" onClick={() => handleCategoryClick("Business")}>
               <div className={styles.icon}>
                 <img className="ml-3 h-6  " src='../../public/briefcase.png' alt="" />
               </div>
               <div className="pl-3">Business</div>
             </div>
-            <div className="text-customColor cursor-pointer pl-5 h-10 flex items-center hover:bg-white" onClick={() => handleCategoryClick("Sports")}>
+            <div className="text-customColor cursor-pointer pl-5 h-10 flex items-center justify-center md:justify-start hover:bg-white" onClick={() => handleCategoryClick("Sports")}>
               <div className={styles.icon}>
                 <img className="ml-3 h-6  " src='../../public/scolor.png' alt="" />
               </div>
