@@ -1,20 +1,17 @@
 import { useState } from 'react'
-import MainPage from './components/MainPage';
+import MainPage from './pages/MainPage';
 import {Routes,Route} from 'react-router-dom'
-import RequestEvent from './components/RequestEvent'
-import Details from './components/Details';
-import Navbar from './components/Navbar';
+import Details from './constants/details.json';
+import RequestEvent from './components/requestpage/RequestEvent';
 
 
 function App() {
 
   return (
     <div className=' bg-[#fefeff]'>
-      <Navbar />
         <Routes>
           <Route path='/' element={<MainPage/>}></Route>
-          <Route path='/requestEvent' element={<RequestEvent/>} ></Route>
-          <Route path='/details' element={<Details />}></Route>
+          <Route path='/requestEvent' element={<RequestEvent/>}></Route>
         </Routes>
     </div>
   )
