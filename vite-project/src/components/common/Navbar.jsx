@@ -1,10 +1,11 @@
 // Navbar.js
 
 import React, { useState } from 'react';
-import SideNav from './SideNav';
-import CustomContainer from './CustomContainer';
-import Card from './Card';
+import SideNav from '../core/SideNav';
+import CustomContainer from '../core/CustomContainer';
+import Card from '../common/Card';
 import {Link} from 'react-router-dom'
+import Hamburger from '../core/hamburger';
 
 const Navbar = () => {
   return(
@@ -33,6 +34,7 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
+        
   )
 };
 
