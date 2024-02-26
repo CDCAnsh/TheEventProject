@@ -33,7 +33,7 @@ const Card = () => {
       <div className='flex flex-col md:flex-row'>
         <SideNav onCategoryChange={handleCategoryChange} />
         <div className='flex flex-col'>
-          <div className='flex justify-center sm:justify-start items-center gap-2 md:gap-5 mx-3'>
+          <div className='flex w-full md:w-auto justify-around md:justify-start items-center md:gap-5 mx-3'>
             <div onClick={handleUpcomingEvent} className={activeEvent === 'upcoming' ? 'text-md sm:text-xl text-center font-semibold hover:text-orange-500' : 'text-md sm:text-xl text-center font-semibold hover:text-orange-500'}>Upcoming Events</div>
 
             <div onClick={handlePrerecordedEvent} className={activeEvent === 'pre-recorded' ? 'text-md sm:text-xl text-center font-semibold hover:text-orange-500' : 'text-md sm:text-xl text-center font-semibold hover:text-orange-500'}>Pre-recorded Events</div>
