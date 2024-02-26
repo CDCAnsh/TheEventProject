@@ -3,7 +3,7 @@ import { useRef,useEffect } from "react";
 import { gsap } from 'gsap';
 
 
-const EventSearchBar = () => {
+const CustomContainer = () => {
 
   const titleRefs = useRef([React.createRef(), React.createRef(), React.createRef(), React.createRef()]);
   const baseRefs = useRef([React.createRef(), React.createRef(), React.createRef(), React.createRef()])
@@ -28,4 +28,4 @@ const EventSearchBar = () => {
 
 }
 
-export default EventSearchBar ;
+export default CustomContainer;

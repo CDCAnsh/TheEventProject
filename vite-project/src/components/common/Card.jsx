@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import data from "../../constants/data.json";
-import CardIndividual from './CardInterface';
+import CardIndividual from './CardIndividual';
 import { Link } from 'react-router-dom';
-import SideNav from '../core/SideNavbar';
+import SideNav from '../core/SideNav';
 
-const CardContainer = () => {
+const Card = () => {
   let [AllEvents, setAllEvents] = useState(data.eventsList);
   const [events, setEvents] = useState(AllEvents.filter(event => event.upcoming === 'true'));
   const [activeEvent, setActiveEvent] = useState("upcoming");
@@ -33,12 +33,12 @@ const CardContainer = () => {
       <div className='flex flex-col md:flex-row'>
         <SideNav onCategoryChange={handleCategoryChange} />
         <div className='flex flex-col'>
-          <div className='flex w-full md:w-auto justify-around md:justify-start items-center md:gap-5 mx-3'>
-            <div onClick={handleUpcomingEvent} className={activeEvent === 'upcoming' ? 'text-md sm:text-xl text-center font-semibold  hover:text-customColor' : 'text-md sm:text-xl text-center font-semibold  hover:text-customColor'}>Upcoming Events</div>
+          <div className='flex justify-center sm:justify-start items-center gap-2 md:gap-5 mx-3'>
+            <div onClick={handleUpcomingEvent} className={activeEvent === 'upcoming' ? 'text-md sm:text-xl text-center font-semibold hover:text-orange-500' : 'text-md sm:text-xl text-center font-semibold hover:text-orange-500'}>Upcoming Events</div>
 
-            <div onClick={handlePrerecordedEvent} className={activeEvent === 'pre-recorded' ? 'text-md sm:text-xl text-center font-semibold  hover:text-customColor' : 'text-md sm:text-xl text-center font-semibold  hover:text-customColor'}>Pre-recorded Events</div>
+            <div onClick={handlePrerecordedEvent} className={activeEvent === 'pre-recorded' ? 'text-md sm:text-xl text-center font-semibold hover:text-orange-500' : 'text-md sm:text-xl text-center font-semibold hover:text-orange-500'}>Pre-recorded Events</div>
 
-            <Link to="/requestEvent" className="text-md sm:text-xl text-center font-semibold hover:text-customColor">Request Event</Link>
+            <Link to="/requestEvent" className="text-md sm:text-xl text-center font-semibold hover:text-orange-500">Request Event</Link>
 
             {/* <div onClick={handle} className={activeEvent === 'request' ? 'text-xl transition-all duration-400 border-b-4 border-customColor cursor-pointer hover:text-customColor' : 'text-xl transition-all duration-400 border-b-4 border-side cursor-pointer hover:text-customColor'}><a>Request Event</a></div> 
       
@@ -59,4 +59,4 @@ const CardContainer = () => {
   );
 };
 
-export default CardContainer;
+export default Card;
