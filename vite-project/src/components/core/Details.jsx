@@ -4,7 +4,7 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import EventsList from "../assets/details.json";
 import "./TimeIcon.css";
 
-const EventDetails = () => {
+const Details = () => {
   console.log(EventsList);
   return (
     <div>
@@ -237,4 +237,4 @@ const EventDetails = () => {
   );
 };
 
-export default EventDetails;
+export default Details;
